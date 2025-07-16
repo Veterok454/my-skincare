@@ -1,33 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NewsLetterBox = () => {
-  const onSubmitHandler = (event) => {
-    event.preventDefault();
-  };
   return (
     <div className='text-center'>
-      <p className='text-2xl  font-medium text-gray-600'>
-        Subscribe now & get 20% off
+      <div className='w-full flex justify-center mb-3'>
+        <div className='flex flex-col sm:flex-row justify-around gap-2 sm:gap-4 text-center text-xs sm:text-sm md:text-base text-gray-700'>
+          <p className='text-2xl text-gray-600 font-medium'>Ready to glow?</p>
+          <Link
+            to='/collection'
+            className='bg-red-end text-white px-8 py-3 text-sm hover:bg-red-start active:bg-red-end uppercase tracking-wider transition duration-300 ease-in-out transform hover:scale-105'
+          >
+            Explore our collection
+          </Link>
+        </div>
+      </div>
+      <p className=' text-xs sm:text-sm md:text-base text-center text-gray-600'>
+        Explore our range designed to elevate your daily skincare ritual.
       </p>
-
-      <form
-        onSubmit={onSubmitHandler}
-        className='w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border border-gray-400 pl-3 '
-      >
-        <input
-          className='w-full  sm:flex-1 outline-none'
-          type='email'
-          placeholder='Enter your email'
-          required
-        />
-        <button
-          style={{ letterSpacing: '4px' }}
-          className='bg-red-end text-white text-xs px-10 py-4 hover:bg-red-start  active:bg-red-end uppercase tracking-wider transition duration-300 ease-in-out transform hover:scale-105'
-          type='submit'
-        >
-          Subscribe
-        </button>
-      </form>
     </div>
   );
 };

@@ -60,9 +60,9 @@ const productSchema = new mongoose.Schema(
       required: [true, 'At least one image is required'],
       validate: {
         validator: function (arr) {
-          return arr.length > 0 && arr.length <= 4;
+          return Array.isArray(arr) && arr.length === 5;
         },
-        message: 'Must have between 1 and 4 images',
+        message: 'Must have exactly 5 images',
       },
     },
     category: {
@@ -83,6 +83,11 @@ const productSchema = new mongoose.Schema(
       default: false,
     },
 
+    sortIndex: {
+      type: Number,
+      default: 0,
+    },
+
     isActive: {
       type: Boolean,
       default: true,
@@ -94,6 +99,8 @@ const productSchema = new mongoose.Schema(
     toObject: { virtuals: true },
   }
 );
+
+productSchema.index({ sortIndex: 1 });
 
 const productModel =
   mongoose.models.product || mongoose.model('product', productSchema);

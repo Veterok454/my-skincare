@@ -9,11 +9,13 @@ const Add = ({ token }) => {
   const [image2, setImage2] = useState(false);
   const [image3, setImage3] = useState(false);
   const [image4, setImage4] = useState(false);
+  const [image5, setImage5] = useState(false);
 
   const fileInputRef1 = useRef();
   const fileInputRef2 = useRef();
   const fileInputRef3 = useRef();
   const fileInputRef4 = useRef();
+  const fileInputRef5 = useRef();
 
   const [name, setName] = useState('');
   const [subName, setSubName] = useState('');
@@ -42,11 +44,13 @@ const Add = ({ token }) => {
     setImage2(false);
     setImage3(false);
     setImage4(false);
+    setImage5(false);
 
     fileInputRef1.current.value = null;
     fileInputRef2.current.value = null;
     fileInputRef3.current.value = null;
     fileInputRef4.current.value = null;
+    fileInputRef5.current.value = null;
   };
 
   const onSubmitHandler = async (e) => {
@@ -75,6 +79,7 @@ const Add = ({ token }) => {
       if (image2) formData.append('image2', image2);
       if (image3) formData.append('image3', image3);
       if (image4) formData.append('image4', image4);
+      if (image5) formData.append('image5', image5);
 
       const response = await axios.post(
         `${backendUrl}/api/product/add`,
@@ -82,7 +87,7 @@ const Add = ({ token }) => {
         {
           headers: {
             'Content-Type': 'multipart/form-data',
-            token,
+            Authorization: `Bearer ${token}`,
           },
         }
       );
@@ -95,9 +100,15 @@ const Add = ({ token }) => {
       }
     } catch (error) {
       console.error('AXIOS ERROR:', error);
-      if (error.response) {
+
+      if (error.response && error.response.data) {
         console.error('Server responded with:', error.response.data);
-        toast.error(error.response.data.message || 'Error 400 from server');
+
+        toast.error(
+          typeof error.response.data.message === 'string'
+            ? error.response.data.message
+            : JSON.stringify(error.response.data)
+        );
       } else {
         toast.error(error.message || 'Unknown error');
       }
@@ -133,6 +144,7 @@ const Add = ({ token }) => {
             { ref: fileInputRef2, state: image2, set: setImage2, id: 'image2' },
             { ref: fileInputRef3, state: image3, set: setImage3, id: 'image3' },
             { ref: fileInputRef4, state: image4, set: setImage4, id: 'image4' },
+            { ref: fileInputRef5, state: image5, set: setImage5, id: 'image5' },
           ].map((img) => (
             <label key={img.id} htmlFor={img.id}>
               <img

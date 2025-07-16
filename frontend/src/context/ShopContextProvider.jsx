@@ -15,12 +15,18 @@ const ShopContextProvider = (props) => {
     () => localStorage.getItem('token') || null
   );
   const [userId, setUserId] = useState('');
+  const isAuthenticated = !!token;
 
   const getProductsData = useCallback(async () => {
     try {
-      const response = await axios.get(backendUrl + '/api/product/list');
+      const response = await axios.get(`${backendUrl}/api/product/list`);
       if (response.data.success) {
-        setProducts(response.data.products);
+        setProducts(
+          response.data.products.map((p) => ({
+            ...p,
+            image: Array.isArray(p.image) ? p.image : [],
+          }))
+        );
       } else {
         toast.error(response.data.message);
       }
@@ -60,6 +66,7 @@ const ShopContextProvider = (props) => {
     token,
     setToken,
     userId,
+    isAuthenticated,
   };
 
   return (

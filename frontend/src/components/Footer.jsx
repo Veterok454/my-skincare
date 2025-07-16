@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
           <Link to='/'>
             <img
-              className='mb-5 w-32 tracking-wider transition duration-300 ease-in-out transform hover:scale-105'
+              className='mb-5 w-16 md:w-24 lg:w-36 transition duration-300 ease-in-out transform hover:scale-105'
               src={assets.logo}
               alt='logotype'
             />

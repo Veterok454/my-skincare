@@ -1,16 +1,16 @@
 import React, { useContext, useState } from 'react';
 import { assets } from '../assets/assets.js';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { ShopContext } from '../context/ShopContext.js';
 import { CartContext } from '../context/CartContext.js';
 import { motion as Motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
   const [visible, setVisible] = useState(false);
   const { setShowSearch, token, setToken } = useContext(ShopContext);
   const navigate = useNavigate();
   const { cartItems, loadingCart, clearCart } = useContext(CartContext);
+  const location = useLocation();
 
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
@@ -26,7 +26,7 @@ const NavBar = () => {
       <Link to='/'>
         <img
           src={assets.logo}
-          className='w-36 tracking-wider transition duration-300 ease-in-out transform hover:scale-105'
+          className='w-16 md:w-24 lg:w-36 transition duration-300 ease-in-out transform hover:scale-105'
           alt='logotype'
         />
       </Link>
@@ -55,12 +55,14 @@ const NavBar = () => {
         </NavLink>
       </ul>
       <div className='flex items-center gap-6'>
-        <img
-          onClick={() => setShowSearch(true)}
-          className='w-5 cursor-pointer tracking-wider transition duration-300 ease-in-out transform hover:scale-105'
-          src={assets.search_icon}
-          alt='search icon'
-        />
+        {location.pathname === '/collection' && (
+          <img
+            onClick={() => setShowSearch(true)}
+            className='w-5 cursor-pointer tracking-wider transition duration-300 ease-in-out transform hover:scale-105'
+            src={assets.search_icon}
+            alt='search icon'
+          />
+        )}
         <div className='group relative'>
           <img
             onClick={() => (token ? null : navigate('/login'))}
@@ -68,6 +70,7 @@ const NavBar = () => {
             src={assets.profile_icon}
             alt='profile icon'
           />
+
           {/*Dropdown Menu */}
 
           {token && (

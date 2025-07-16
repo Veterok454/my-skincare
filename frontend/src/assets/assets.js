@@ -1,27 +1,34 @@
-import image_1 from './image_1_2.webp';
-import image_1_3 from './image_1_3.jpg';
-import image_1_1 from './image_1.png';
+import image_1 from './image_1.webp';
+import image_1_1 from './image_1_1.webp';
 import image_1_2 from './image_1_2.webp';
-import image_2 from './image_2_1.webp';
-import image_2_1 from './image_2.png';
-import image_2_2 from './image_2_2.jpg';
-import image_3 from './image_3_1.webp';
-import image_3_2 from './image_3_2.jpg';
-import image_3_3 from './image_3_3.jpg';
-import image_3_1 from './image_3.png';
-import image_4 from './image_4_1.webp';
-import image_4_1 from './image_4.png';
-import image_5 from './image_5_1.webp';
-import image_5_2 from './image_5_2.jpg';
-import image_5_3 from './image_5_3.jpg';
-import image_5_1 from './image_5.png';
-import image_6 from './image_6_1.webp';
-import image_6_1 from './image_6.jpg';
-import image_6_2 from './image_6_2.jpg';
+import image_1_3 from './image_1_3.webp';
+
+import image_2 from './image_2.webp';
+import image_2_1 from './image_2_1.webp';
+import image_2_2 from './image_2_2.webp';
+
+import image_3 from './image_3.webp';
+import image_3_1 from './image_3_1.webp';
+import image_3_2 from './image_3_2.webp';
+import image_3_3 from './image_3_3.webp';
+
+import image_4 from './image_4.webp';
+import image_4_1 from './image_4_1.webp';
+
+import image_5 from './image_5.webp';
+import image_5_1 from './image_5_1.webp';
+import image_5_2 from './image_5_2.webp';
+import image_5_3 from './image_5_3.webp';
+
+import image_6 from './image_6.webp';
+import image_6_1 from './image_6_1.webp';
+
 import image_7 from './image_7.webp';
-import image_7_1 from './image_7_1.jpg';
+import image_7_1 from './image_7_1.webp';
+
 import image_8 from './image_8.webp';
-import image_8_1 from './image_8_1.jpg';
+import image_8_1 from './image_8_1.webp';
+import image_8_2 from './image_8_2.webp';
 
 import logo from './logo.png';
 import logo_white from './logo_white.png';
@@ -34,17 +41,16 @@ import exchange_icon from './exchange_icon.png';
 import profile_icon from './profile_icon.png';
 import quality_icon from './quality_icon.png';
 import search_icon from './search_icon.png';
-import star_dull_icon from './star_dull_icon.png';
-import star_icon from './star_icon.png';
 import support_img from './support_img.png';
 import menu_icon from './menu_icon.png';
-import about_img from './about_img.jpg';
+import about_img from './about_img.webp';
 import contact_img from './contact_img.png';
 import stripe_logo from './stripe_logo.png';
 import paypal_logo from './paypal_logo.png';
 import cross_icon from './cross_icon.png';
 import instagram_icon from './instagram_icon.png';
 import facebook_icon from './facebook_icon.png';
+import fallback from './fallback.jpg';
 
 export const assets = {
   logo,
@@ -57,8 +63,6 @@ export const assets = {
   profile_icon,
   quality_icon,
   search_icon,
-  star_dull_icon,
-  star_icon,
   bin_icon,
   support_img,
   menu_icon,
@@ -69,6 +73,7 @@ export const assets = {
   cross_icon,
   instagram_icon,
   facebook_icon,
+  fallback,
 };
 
 export const products = [
@@ -88,7 +93,7 @@ export const products = [
     conclusion:
       'Elevate your handwashing experience with MIY Argan Gold Hand Wash – because clean hands should feel as luxurious as they look.',
     price: 14,
-    image: [image_1, image_1_1, image_1_2, image_1_3],
+    image: [image_1_2, image_1_1, image_1_3, image_1],
     category: 'Body',
     subCategory: 'Washing',
     sizes: ['300 ml'],
@@ -111,7 +116,7 @@ export const products = [
     conclusion:
       'Experience the luxury of salon-quality hair care at home with MIY Argan Gold Shampoo – because your hair deserves nothing but the best.',
     price: 13,
-    image: [image_2, image_2_1, image_3_2, image_2_2],
+    image: [image_2_1, image_2_2, image_5_2, image_2],
     category: 'Hair',
     subCategory: 'Shampoo',
     sizes: ['300 ml'],
@@ -134,7 +139,7 @@ export const products = [
     conclusion:
       'Elevate your skincare routine with MIY Argan Gold Body Lotion – because your skin deserves to shine with luxury.',
     price: 14,
-    image: [image_3, image_3_1, image_3_3, image_3_2],
+    image: [image_3_1, image_3_2, image_3_3, image_3],
     category: 'Body',
     subCategory: 'Lotion',
     sizes: ['300 ml'],
@@ -157,7 +162,7 @@ export const products = [
     conclusion:
       'Pair with MIY Argan Gold Shampoo for the perfect haircare ritual. Indulge in salon-quality softness and shine—because your hair deserves luxury.',
     price: 13,
-    image: [image_4, image_4_1, image_3_2, image_5_2],
+    image: [image_4_1, image_2_2, image_5_2, image_4],
     category: 'Hair',
     subCategory: 'Conditioner',
     sizes: ['300 ml'],
@@ -180,7 +185,7 @@ export const products = [
     conclusion:
       'Indulge your skin with MIY Argan Gold Body Wash – because every shower should feel like a touch of luxury.',
     price: 14,
-    image: [image_5, image_5_1, image_5_2, image_5_3],
+    image: [image_5_1, image_5_2, image_5_3, image_5],
     category: 'Body',
     subCategory: 'Washing',
     sizes: ['300 ml'],
@@ -204,7 +209,7 @@ export const products = [
     conclusion:
       'Presented in convenient, travel-friendly bottles, the MIY Argan Gold Luxury Travel Set is the perfect touch of indulgence for your guests or your next getaway. Because luxury should be within reach—anytime, anywhere.',
     price: 25,
-    image: [image_6, image_6_1, image_6_2, image_5_2],
+    image: [image_6_1, image_3_3, image_5_2, image_6],
     category: 'Body',
     subCategory: 'Set',
     sizes: ['5 x 30 ml'],
@@ -224,9 +229,9 @@ export const products = [
       '✔ Argan Gold Body Lotion – Deeply nourishes and enhances natural radiance.',
     ],
     conclusion:
-      'Designed for daily indulgence, the MIY Argan Gold Essentials Set brings a touch of spa-like luxury to every wash. Because self-care should feel extraordinary—every single day.',
+      'Designed for daily indulgence, the MIY Argan Gold Essentials Set brings a touch of spa-like luxury to every wash. Because self-care should feel extraordinary - every single day.',
     price: 15,
-    image: [image_7, image_7_1, image_3_3, image_5_2],
+    image: [image_7, image_5_3, image_3_2, image_7_1],
     category: 'Body',
     subCategory: 'Set',
     sizes: ['3 x 30 ml'],
@@ -247,7 +252,7 @@ export const products = [
     conclusion:
       'Whether at home, in a luxury hotel, or at a spa, the MIY Argan Gold Hair Care Duo brings salon-quality results to your everyday routine. Because healthy, gorgeous hair starts with the right care.',
     price: 10,
-    image: [image_8, image_8_1, image_5_2, image_3_2],
+    image: [image_8, image_8_2, image_5_2, image_8_1],
     category: 'Hair',
     subCategory: 'Set',
     sizes: ['2 x 30 ml'],
@@ -271,7 +276,7 @@ export const products = [
     conclusion:
       'With our Facial Cleanser, your skin feels clean, hydrated, and glowing – never tight or dry.',
     price: 13,
-    image: [image_1],
+    image: [image_1_1, image_2_2, image_3_3, image_1],
     category: 'Face',
     subCategory: 'Washing',
     sizes: ['100 ml'],

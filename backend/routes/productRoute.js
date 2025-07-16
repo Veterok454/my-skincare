@@ -6,36 +6,17 @@ import {
   singleProduct,
   updateProduct,
 } from '../controllers/productController.js';
-import upload from '../middleware/multer.js';
+import { reorderProducts } from '../controllers/productController.js';
+import { productUpload } from '../middleware/multer.js';
 import adminAuth from '../middleware/adminAuth.js';
 
 const productRouter = express.Router();
 
 // Add product route
-productRouter.post(
-  '/add',
-  adminAuth,
-  upload.fields([
-    { name: 'image1', maxCount: 1 },
-    { name: 'image2', maxCount: 1 },
-    { name: 'image3', maxCount: 1 },
-    { name: 'image4', maxCount: 1 },
-  ]),
-  addProduct
-);
+productRouter.post('/add', adminAuth, productUpload, addProduct);
 
 // Update product route
-productRouter.put(
-  '/update/:id',
-  adminAuth,
-  upload.fields([
-    { name: 'image1', maxCount: 1 },
-    { name: 'image2', maxCount: 1 },
-    { name: 'image3', maxCount: 1 },
-    { name: 'image4', maxCount: 1 },
-  ]),
-  updateProduct
-);
+productRouter.put('/update/:id', adminAuth, productUpload, updateProduct);
 
 // Remove product route (keeping POST as in original code)
 productRouter.post('/remove', adminAuth, removeProduct);
@@ -45,5 +26,6 @@ productRouter.post('/single', singleProduct);
 
 // List products route
 productRouter.get('/list', listProducts);
+productRouter.post('/reorder', adminAuth, reorderProducts);
 
 export default productRouter;

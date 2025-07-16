@@ -4,8 +4,8 @@ import jwt from 'jsonwebtoken';
 import userModel from '../models/userModel.js';
 
 // Create JWT token
-const createToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '7d' });
+const createToken = (id, role = 'user') => {
+  return jwt.sign({ id, role }, process.env.JWT_SECRET, { expiresIn: '7d' });
 };
 
 // Middleware for token verification
@@ -45,7 +45,7 @@ const loginUser = async (req, res) => {
       await user.updateLastLogin();
     }
 
-    const token = createToken(user._id);
+    const token = createToken(user._id, user.isAdmin ? 'admin' : 'user');
     res.json({
       success: true,
       token,
@@ -107,7 +107,7 @@ const registerUser = async (req, res) => {
     });
 
     const user = await newUser.save();
-    const token = createToken(user._id);
+    const token = createToken(user._id, user.isAdmin ? 'admin' : 'user');
 
     res.status(201).json({
       success: true,

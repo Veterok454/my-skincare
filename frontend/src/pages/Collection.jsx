@@ -128,7 +128,7 @@ const Collection = () => {
       </div>
       {/* Products */}
       <div className='flex-1'>
-        <div className='flex justify-between text-base sm:text-2xl mb-4'>
+        <div className='flex justify-between gap-1 text-base sm:text-2xl mb-4'>
           <Title text1={'ALL'} text2={'COLLECTIONS'} />
           <select
             onChange={(e) => setSortType(e.target.value)}
@@ -148,7 +148,7 @@ const Collection = () => {
               subName={item.subName}
               id={item._id}
               price={item.price}
-              image={item.image}
+              image={item.image?.[1] || assets.fallback.jpg}
             />
           ))}
         </div>

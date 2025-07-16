@@ -6,6 +6,7 @@ import connectCloudinary from './config/cloudinary.js';
 import userRouter from './routes/userRoute.js';
 import productRouter from './routes/productRoute.js';
 import orderRouter from './routes/orderRoute.js';
+import reviewRoutes from './routes/reviewRoute.js';
 
 // App Config
 const app = express();
@@ -31,6 +32,7 @@ app.use(cors());
 app.use('/api/user', userRouter);
 app.use('/api/product', productRouter);
 app.use('/api/order', orderRouter);
+app.use('/api/reviews', reviewRoutes);
 
 // Main route
 app.get('/', (req, res) => {
@@ -51,7 +53,7 @@ app.use('*', (req, res) => {
 
 // Global error handling
 app.use((error, req, res, next) => {
-  logger.error('Server', error.message);
+  console.error(error);
   res.status(500).json({
     success: false,
     message: 'Internal Server Error',

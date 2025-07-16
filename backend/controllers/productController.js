@@ -115,28 +115,18 @@ const addProduct = async (req, res) => {
       });
     }
 
-    const image1 = req.files.image1 && req.files.image1[0];
-    const image2 = req.files.image2 && req.files.image2[0];
-    const image3 = req.files.image3 && req.files.image3[0];
-    const image4 = req.files.image4 && req.files.image4[0];
+    const image1 = req.files.image1?.[0];
+    const image2 = req.files.image2?.[0];
+    const image3 = req.files.image3?.[0];
+    const image4 = req.files.image4?.[0];
+    const image5 = req.files.image5?.[0];
 
-    const images = [image1, image2, image3, image4].filter(
-      (item) => item !== undefined
-    );
+    const images = [image1, image2, image3, image4, image5].filter(Boolean);
 
-    // Checking whether there is at least one image
-    if (images.length === 0) {
+    if (images.length !== 5) {
       return res.status(400).json({
         success: false,
-        message: 'At least one image is required',
-      });
-    }
-
-    // Check maximum 4 images
-    if (images.length > 4) {
-      return res.status(400).json({
-        success: false,
-        message: 'Maximum 4 images are allowed',
+        message: 'Exactly 5 images are required (1 main + 4 thumbnails)',
       });
     }
 
@@ -229,7 +219,12 @@ const addProduct = async (req, res) => {
       });
     }
 
-    const product = new productModel(productData);
+    const count = await productModel.countDocuments();
+
+    const product = new productModel({
+      ...productData,
+      sortIndex: count,
+    });
     await product.save();
 
     res.status(201).json({
@@ -293,7 +288,7 @@ const listProducts = async (req, res) => {
       });
     }
 
-    let query = productModel.find(filter).sort({ createdAt: -1 });
+    let query = productModel.find(filter).sort({ sortIndex: 1 });
 
     if (pageSize) {
       query = query.skip(skip).limit(pageSize);
@@ -503,10 +498,38 @@ const updateProduct = async (req, res) => {
   }
 };
 
+const reorderProducts = async (req, res) => {
+  try {
+    const { products } = req.body;
+
+    if (!Array.isArray(products)) {
+      return res.status(400).json({
+        success: false,
+        message: 'Invalid data format',
+      });
+    }
+
+    const updates = products.map((p) =>
+      productModel.findByIdAndUpdate(p.id, { sortIndex: p.sortIndex })
+    );
+
+    await Promise.all(updates);
+
+    res.json({ success: true, message: 'Product order updated successfully' });
+  } catch (error) {
+    console.error('Reorder error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Failed to reorder products',
+    });
+  }
+};
+
 export {
   listProducts,
   addProduct,
   removeProduct,
   singleProduct,
   updateProduct,
+  reorderProducts,
 };

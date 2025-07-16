@@ -2,6 +2,7 @@ import React from 'react';
 import Title from '../components/Title';
 import { assets } from '../assets/assets';
 import { Link } from 'react-router-dom';
+import NewsLetterBox from '../components/NewsLetterBox';
 
 const About = () => {
   return (
@@ -115,7 +116,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='text-xl pt-10 pb-2'>
+      <div className='text-xl pt-10 pb-2 px-10'>
         <Title text1={'WHY'} text2={'CHOOSE US'} />
       </div>
       <p className='text-xl text-gray-600 px-10'>
@@ -153,20 +154,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='w-full flex justify-center mt-16 mb-3'>
-        <div className='flex items-center gap-4'>
-          <p className='text-2xl text-gray-600 font-medium'>Ready to glow?</p>
-          <Link
-            to='/collection'
-            className='bg-red-end text-white px-8 py-3 text-sm hover:bg-red-start active:bg-red-end uppercase tracking-wider transition duration-300 ease-in-out transform hover:scale-105'
-          >
-            Explore our collection
-          </Link>
-        </div>
-      </div>
-      <p className=' text-xs sm:text-sm md:text-base text-center text-gray-600'>
-        Explore our range designed to elevate your daily skincare ritual.
-      </p>
+      <NewsLetterBox />
     </div>
   );
 };
