@@ -177,11 +177,15 @@ const Product = () => {
         {/*Product Info */}
         <div className='flex-1'>
           <h1 className='font-bold text-2xl text-red-start sm:text-xl lg:mt-5'>
-            {productData.name} {''} ({productData.size})
+            {productData.name}
           </h1>
+
           <h2 className='font-semibold text-2xl text-red-start  sm:text-xl lg:mt-2'>
             {productData.subName}
           </h2>
+          <h3 className=' text-xl text-red-start  sm:text-xl lg:mt-2'>
+            ({productData.size})
+          </h3>
 
           <div className='flex items-center gap-1 lg:mt-2'>
             <div className='flex items-center'>
