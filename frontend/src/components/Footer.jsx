@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
           <Link to='/'>
             <img
-              className='mb-5 w-16 md:w-24 lg:w-36 transition duration-300 ease-in-out transform hover:scale-105'
+              className='mb-5 w-8 md:w-16 lg:w-24 transition duration-300 ease-in-out transform hover:scale-105'
               src={assets.logo}
               alt='logotype'
             />
@@ -21,7 +21,7 @@ const Footer = () => {
             care that feels luxurious yet purposeful, indulgent yet effective.
             Imagine textures that melt into your skin, scents that calm the
             mind, and ingredients that actually make a difference - every single
-            day. That’s what Miy delivers.
+            day. That’s what MY Skin Care delivers.
           </p>
         </div>
         <div>
@@ -66,7 +66,7 @@ const Footer = () => {
           </p>
           <ul className='flex flex-row gap-3'>
             <NavLink
-              to='https://www.instagram.com/miytraining/'
+              to='https://www.instagram.com'
               className='flex flex-col gap-1 tracking-wider transition duration-300 ease-in-out transform hover:scale-105'
             >
               <img
@@ -76,7 +76,7 @@ const Footer = () => {
               />
             </NavLink>
             <NavLink
-              to='https://www.facebook.com/share/1CC5T6bG6H/?mibextid=wwXIfr'
+              to='https://www.facebook.com'
               className='flex flex-col gap-1 tracking-wider transition duration-300 ease-in-out transform hover:scale-105'
             >
               <img
@@ -91,7 +91,7 @@ const Footer = () => {
       <div>
         <hr />
         <p className='py-5 text-sm text-center text-gray-600'>
-          Copyright &copy; 2025 MIY. All Rights Reserved.
+          Copyright &copy; 2025 MY Skin Care. All Rights Reserved.
         </p>
       </div>
     </div>

@@ -20,7 +20,7 @@ const About = () => {
           <div>
             <p>
               <span className='niconne-regular text-4xl  text-red-start block m-4'>
-                Miy. Skin Care
+                MY Skin Care
               </span>
               Born in Britain, made for every skin — we craft luxury skincare
               that doesn’t just sit on your shelf, it transforms your ritual.
@@ -88,12 +88,12 @@ const About = () => {
                 You deserve care that’s both indulgent and effective. Think
                 textures that melt into your skin, calming natural scents, and
                 ingredients that truly make a difference — every single day.
-                That’s what Miy delivers.
+                That’s what MY Skin Care delivers.
               </p>
 
               <p>
                 <strong className='italic text-gray-700'>
-                  Welcome to Miy Skin Care.
+                  Welcome to MY Skin Care.
                 </strong>{' '}
                 Thoughtfully formulated for your face, body, and hair — powered
                 by nature, perfected by science. Each product blends
@@ -107,7 +107,7 @@ const About = () => {
                 <strong className='italic text-gray-700'>
                   A Brand You Can Fall in Love With.
                 </strong>{' '}
-                Miy Skin Care is a premium, conscious beauty brand. We create
+                MY Skin Care is a premium, conscious beauty brand. We create
                 luxurious, clean essentials for those who believe in treating
                 their skin — and themselves — with care and intention.
               </p>

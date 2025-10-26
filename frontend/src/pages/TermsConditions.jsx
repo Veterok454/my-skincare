@@ -9,14 +9,14 @@ const TermsConditions = () => {
       </div>
       <div className='border px-10 md:px-20 py-10 md:py-20 mx-10 md:mx-20 text-gray-600 shadow-xl rounded-xl '>
         <p>
-          Welcome to Miy Skin Care. By accessing and using our website, you
-          agree to comply with and be bound by the following Terms and
-          Conditions. Please read them carefully before using our services.
+          Welcome to MY Skin Care. By accessing and using our website, you agree
+          to comply with and be bound by the following Terms and Conditions.
+          Please read them carefully before using our services.
         </p>
         <div className='pt-3'>
           <b className='text-xl'>1. About Us</b>
           <p>
-            This website is operated by Miy Skin Care, a UK-based company
+            This website is operated by MY Skin Care, a UK-based company
             offering luxury, vegan, cruelty-free skincare products. If you have
             any questions, please contact us at [email].
           </p>
@@ -77,7 +77,7 @@ const TermsConditions = () => {
           <b className='text-xl'>7. Intellectual Property</b>
           <p>
             All content on this site — including logos, text, images, and
-            designs — is the intellectual property of Miy Skin Care and may not
+            designs — is the intellectual property of MY Skin Care and may not
             be used without our prior written permission.
           </p>
         </div>

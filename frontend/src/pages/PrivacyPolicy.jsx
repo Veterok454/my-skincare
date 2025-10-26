@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
       </div>
       <div className='border px-10 md:px-20 py-10 md:py-20 mx-10 md:mx-20 text-gray-600 shadow-xl rounded-xl '>
         <p>
-          At Miy Skin Care, your privacy is our priority. This Privacy Policy
+          At MY Skin Care, your privacy is our priority. This Privacy Policy
           outlines how we collect, use, store, and protect your personal data
           when you visit our website or make a purchase.
         </p>

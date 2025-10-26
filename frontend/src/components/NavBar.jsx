@@ -26,7 +26,7 @@ const NavBar = () => {
       <Link to='/'>
         <img
           src={assets.logo}
-          className='w-16 md:w-24 lg:w-36 transition duration-300 ease-in-out transform hover:scale-105'
+          className='w-8 md:w-16 lg:w-24 transition duration-300 ease-in-out transform hover:scale-105'
           alt='logotype'
         />
       </Link>
