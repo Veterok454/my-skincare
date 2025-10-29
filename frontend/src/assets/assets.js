@@ -128,7 +128,7 @@ export const assets = {
 export const products = [
   {
     _id: 'aaaaa',
-    name: 'Argan Gold Hand Wash',
+    name: 'Hand Wash',
     subName: 'Gentle Cleansing with a Touch of Luxury',
     description:
       'Experience pure indulgence with Argan Gold Hand Wash, a luxurious formula infused with pure argan oil to cleanse, nourish, and protect your hands. Its rich, velvety lather gently removes impurities while maintaining the skin’s natural moisture balance, leaving your hands feeling soft, refreshed, and beautifully smooth.',
@@ -165,7 +165,7 @@ export const products = [
     conclusion:
       'Experience the luxury of salon-quality hair care at home with Argan Gold Shampoo – because your hair deserves nothing but the best.',
     price: 13,
-    image: [image_2_1, image_1_2, image_3_3, image_2, image_2_4],
+    image: [image_2_1, image_1_2, image_3_3, image_2, image_5_2],
     category: 'Hair',
     subCategory: 'Shampoo',
     sizes: ['300 ml'],
@@ -174,7 +174,7 @@ export const products = [
   },
   {
     _id: 'aaaac',
-    name: 'Argan Gold Body Lotion',
+    name: 'Body Lotion',
     subName: 'Hydration for Glowing, Silky Skin',
     description:
       'Pamper your skin with our Argan Gold Body Lotion, a rich and nourishing formula infused with pure argan oil to deliver deep hydration and a radiant glow. This lightweight yet intensely moisturizing lotion absorbs effortlessly, leaving your skin feeling soft, smooth, and beautifully luminous.',
@@ -220,7 +220,7 @@ export const products = [
   },
   {
     _id: 'aaaae',
-    name: 'Argan Gold Body Wash',
+    name: 'Body Wash',
     subName: 'Cleansing for Soft, Radiant Skin',
     description:
       'Transform your daily shower into a spa-like experience with Argan Gold Body Wash. Infused with pure argan oil, this indulgent formula gently cleanses while locking in moisture, leaving your skin feeling soft, refreshed, and beautifully radiant. Its rich, creamy lather pampers your skin, making every wash a moment of pure luxury.',
