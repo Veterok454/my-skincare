@@ -6,6 +6,7 @@ import image_1_3 from './image_1_3.webp';
 import image_2 from './image_2.webp';
 import image_2_1 from './image_2_1.webp';
 import image_2_2 from './image_2_2.webp';
+import image_2_4 from './image_2_4.webp';
 
 import image_3 from './image_3.webp';
 import image_3_1 from './image_3_1.webp';
@@ -28,7 +29,55 @@ import image_7_1 from './image_7_1.webp';
 
 import image_8 from './image_8.webp';
 import image_8_1 from './image_8_1.webp';
-import image_8_2 from './image_8_2.webp';
+
+import image_9 from './image_9.webp';
+import image_9_1 from './image_9_1.webp';
+
+import image_10 from './image_10.webp';
+import image_10_1 from './image_10_1.webp';
+import image_10_2 from './image_10_2.webp';
+
+import image_11 from './image_11.webp';
+import image_11_1 from './image_11_1.webp';
+import image_11_2 from './image_11_2.webp';
+
+import image_12_1 from './image_12_1.webp';
+
+import image_13 from './image_13.webp';
+import image_13_1 from './image_13_1.webp';
+
+import image_14 from './image_14.webp';
+import image_14_1 from './image_14_1.webp';
+
+import image_15 from './image_15.webp';
+import image_15_1 from './image_15_1.webp';
+import image_15_2 from './image_15_2.webp';
+import image_15_3 from './image_15_3.webp';
+import image_15_4 from './image_15_4.webp';
+
+import image_16 from './image_16.webp';
+import image_16_1 from './image_16_1.webp';
+
+import image_17 from './image_17.webp';
+import image_17_1 from './image_17_1.webp';
+
+import image_18_1 from './image_18_1.webp';
+
+import image_19 from './image_19.webp';
+import image_19_1 from './image_19_1.webp';
+import image_19_2 from './image_19_2.webp';
+
+import image_20 from './image_20.webp';
+import image_20_1 from './image_20_1.webp';
+
+import image_21 from './image_21.webp';
+import image_21_1 from './image_21_1.webp';
+
+import image_22 from './image_22.webp';
+import image_22_1 from './image_22_1.webp';
+
+import image_23 from './image_23.webp';
+import image_23_1 from './image_23_1.webp';
 
 import logo from './logo.png';
 import logo_white from './logo_white.png';
@@ -79,10 +128,10 @@ export const assets = {
 export const products = [
   {
     _id: 'aaaaa',
-    name: 'MIY Argan Gold Hand Wash',
+    name: 'Argan Gold Hand Wash',
     subName: 'Gentle Cleansing with a Touch of Luxury',
     description:
-      'Experience pure indulgence with MIY Argan Gold Hand Wash, a luxurious formula infused with pure argan oil to cleanse, nourish, and protect your hands. Its rich, velvety lather gently removes impurities while maintaining the skin’s natural moisture balance, leaving your hands feeling soft, refreshed, and beautifully smooth.',
+      'Experience pure indulgence with Argan Gold Hand Wash, a luxurious formula infused with pure argan oil to cleanse, nourish, and protect your hands. Its rich, velvety lather gently removes impurities while maintaining the skin’s natural moisture balance, leaving your hands feeling soft, refreshed, and beautifully smooth.',
     keyBenefits: '✨ Key Benefits:',
     benefits: [
       '✔ Gentle & Effective Cleansing – Removes dirt and impurities without drying.',
@@ -91,9 +140,9 @@ export const products = [
       '✔ For All Skin Types – Gentle enough for daily use.',
     ],
     conclusion:
-      'Elevate your handwashing experience with MIY Argan Gold Hand Wash – because clean hands should feel as luxurious as they look.',
+      'Elevate your handwashing experience with Argan Gold Hand Wash – because clean hands should feel as luxurious as they look.',
     price: 14,
-    image: [image_1_2, image_1_1, image_1_3, image_1],
+    image: [image_1_1, image_1_2, image_1_3, image_1, image_5_2],
     category: 'Body',
     subCategory: 'Washing',
     sizes: ['300 ml'],
@@ -102,10 +151,10 @@ export const products = [
   },
   {
     _id: 'aaaab',
-    name: 'MIY Argan Gold Shampoo',
+    name: 'Argan Gold Shampoo',
     subName: 'Luxurious Care for Radiant, Healthy Hair',
     description:
-      'Transform your hair with the MIY Argan Gold Shampoo, a luxurious formula infused with pure argan oil to deeply nourish, hydrate, and restore shine. Designed for all hair types, this shampoo gently cleanses while maintaining the natural moisture balance, leaving your hair silky soft, manageable, and beautifully radiant.',
+      'Transform your hair with our Argan Gold Shampoo, a luxurious formula infused with pure argan oil to deeply nourish, hydrate, and restore shine. Designed for all hair types, this shampoo gently cleanses while maintaining the natural moisture balance, leaving your hair silky soft, manageable, and beautifully radiant.',
     keyBenefits: '✨ Key Benefits:',
     benefits: [
       '✔ Deep Nourishment – Argan oil hydrates and strengthens hair from root to tip.',
@@ -114,9 +163,9 @@ export const products = [
       '✔ For All Hair Types – Suitable for daily use and color-treated hair.',
     ],
     conclusion:
-      'Experience the luxury of salon-quality hair care at home with MIY Argan Gold Shampoo – because your hair deserves nothing but the best.',
+      'Experience the luxury of salon-quality hair care at home with Argan Gold Shampoo – because your hair deserves nothing but the best.',
     price: 13,
-    image: [image_2_1, image_2_2, image_5_2, image_2],
+    image: [image_2_1, image_1_2, image_3_3, image_2, image_2_4],
     category: 'Hair',
     subCategory: 'Shampoo',
     sizes: ['300 ml'],
@@ -125,10 +174,10 @@ export const products = [
   },
   {
     _id: 'aaaac',
-    name: 'MIY Argan Gold Body Lotion',
+    name: 'Argan Gold Body Lotion',
     subName: 'Hydration for Glowing, Silky Skin',
     description:
-      'Pamper your skin with the MIY Argan Gold Body Lotion, a rich and nourishing formula infused with pure argan oil to deliver deep hydration and a radiant glow. This lightweight yet intensely moisturizing lotion absorbs effortlessly, leaving your skin feeling soft, smooth, and beautifully luminous.',
+      'Pamper your skin with our Argan Gold Body Lotion, a rich and nourishing formula infused with pure argan oil to deliver deep hydration and a radiant glow. This lightweight yet intensely moisturizing lotion absorbs effortlessly, leaving your skin feeling soft, smooth, and beautifully luminous.',
     keyBenefits: '✨ Key Benefits:',
     benefits: [
       '✔ Intense Hydration – Argan oil deeply nourishes and replenishes moisture.',
@@ -137,9 +186,9 @@ export const products = [
       '✔ For All Skin Types – Gentle and suitable for daily use.',
     ],
     conclusion:
-      'Elevate your skincare routine with MIY Argan Gold Body Lotion – because your skin deserves to shine with luxury.',
+      'Elevate your skincare routine with Argan Gold Body Lotion – because your skin deserves to shine with luxury.',
     price: 14,
-    image: [image_3_1, image_3_2, image_3_3, image_3],
+    image: [image_3_1, image_1_2, image_3_3, image_3, image_1_3],
     category: 'Body',
     subCategory: 'Lotion',
     sizes: ['300 ml'],
@@ -148,10 +197,10 @@ export const products = [
   },
   {
     _id: 'aaaad',
-    name: 'MIY Argan Gold Conditioner',
+    name: 'Argan Gold Conditioner',
     subName: 'Intense Nourishment for Silky, Radiant Hair',
     description:
-      'Give your hair the ultimate care with MIY Argan Gold Conditioner, enriched with pure argan oil to deeply hydrate, strengthen, and restore shine. This luxurious formula detangles effortlessly, leaving hair silky smooth, frizz-free, and beautifully radiant. Perfect for all hair types, including dry and color-treated hair.',
+      'Give your hair the ultimate care with Argan Gold Conditioner, enriched with pure argan oil to deeply hydrate, strengthen, and restore shine. This luxurious formula detangles effortlessly, leaving hair silky smooth, frizz-free, and beautifully radiant. Perfect for all hair types, including dry and color-treated hair.',
     keyBenefits: '✨ Key Benefits:',
     benefits: [
       '✔ Deep Hydration & Repair – Argan oil nourishes and strengthens hair.',
@@ -160,9 +209,9 @@ export const products = [
       '✔ For All Hair Types – Safe for daily use and color-treated hair.',
     ],
     conclusion:
-      'Pair with MIY Argan Gold Shampoo for the perfect haircare ritual. Indulge in salon-quality softness and shine—because your hair deserves luxury.',
+      'Pair with Argan Gold Shampoo for the perfect haircare ritual. Indulge in salon-quality softness and shine—because your hair deserves luxury.',
     price: 13,
-    image: [image_4_1, image_2_2, image_5_2, image_4],
+    image: [image_4_1, image_1_2, image_5_2, image_4, image_5_3],
     category: 'Hair',
     subCategory: 'Conditioner',
     sizes: ['300 ml'],
@@ -171,10 +220,10 @@ export const products = [
   },
   {
     _id: 'aaaae',
-    name: 'MIY Argan Gold Body Wash',
+    name: 'Argan Gold Body Wash',
     subName: 'Cleansing for Soft, Radiant Skin',
     description:
-      'Transform your daily shower into a spa-like experience with MIY Argan Gold Body Wash. Infused with pure argan oil, this indulgent formula gently cleanses while locking in moisture, leaving your skin feeling soft, refreshed, and beautifully radiant. Its rich, creamy lather pampers your skin, making every wash a moment of pure luxury.',
+      'Transform your daily shower into a spa-like experience with Argan Gold Body Wash. Infused with pure argan oil, this indulgent formula gently cleanses while locking in moisture, leaving your skin feeling soft, refreshed, and beautifully radiant. Its rich, creamy lather pampers your skin, making every wash a moment of pure luxury.',
     keyBenefits: '✨ Key Benefits:',
     benefits: [
       '✔ Gentle Cleansing – Effectively removes impurities without stripping moisture.',
@@ -183,9 +232,9 @@ export const products = [
       '✔ For All Skin Types – Gentle and perfect for daily use.',
     ],
     conclusion:
-      'Indulge your skin with MIY Argan Gold Body Wash – because every shower should feel like a touch of luxury.',
+      'Indulge your skin with Argan Gold Body Wash – because every shower should feel like a touch of luxury.',
     price: 14,
-    image: [image_5_1, image_5_2, image_5_3, image_5],
+    image: [image_5_1, image_5_2, image_5_3, image_5, image_3_3],
     category: 'Body',
     subCategory: 'Washing',
     sizes: ['300 ml'],
@@ -194,10 +243,10 @@ export const products = [
   },
   {
     _id: 'aaaaf',
-    name: 'MIY Argan Gold Luxury Travel Set',
+    name: 'Argan Gold Luxury Travel Set',
     subName: 'The Ultimate Spa Experience',
     description:
-      'Indulge in luxury on the go with the MIY Argan Gold Luxury Travel Set – a curated collection of five essential products infused with pure argan oil to nourish, hydrate, and pamper from head to toe. Perfect for hotels, spas, or travel, this elegant set ensures a five-star self-care experience wherever you are.',
+      'Indulge in luxury on the go with our Argan Gold Luxury Travel Set – a curated collection of five essential products infused with pure argan oil to nourish, hydrate, and pamper from head to toe. Perfect for hotels, spas, or travel, this elegant set ensures a five-star self-care experience wherever you are.',
     keyBenefits: '✨ Set Includes:',
     benefits: [
       '✔ Argan Gold Shampoo – Gently cleanses while restoring shine and strength.',
@@ -207,9 +256,9 @@ export const products = [
       '✔ Argan Gold Hand Wash – Softens and protects for beautifully smooth hands.',
     ],
     conclusion:
-      'Presented in convenient, travel-friendly bottles, the MIY Argan Gold Luxury Travel Set is the perfect touch of indulgence for your guests or your next getaway. Because luxury should be within reach—anytime, anywhere.',
+      'Presented in convenient, travel-friendly bottles, the MY Argan Gold Luxury Travel Set is the perfect touch of indulgence for your guests or your next getaway. Because luxury should be within reach—anytime, anywhere.',
     price: 25,
-    image: [image_6_1, image_3_3, image_5_2, image_6],
+    image: [image_19_1, image_1_2, image_6_1, image_19, image_19_2],
     category: 'Body',
     subCategory: 'Set',
     sizes: ['5 x 30 ml'],
@@ -218,10 +267,10 @@ export const products = [
   },
   {
     _id: 'aaaag',
-    name: 'MIY Argan Gold Essentials Set',
+    name: 'Argan Gold Essentials Set',
     subName: 'Everyday Luxury for Silky Soft Skin',
     description:
-      'Elevate your daily routine with the MIY Argan Gold Essentials Set, a trio of indulgent skincare must-haves infused with pure argan oil to cleanse, nourish, and hydrate. Perfect for hotels, spas, or home, this luxurious set pampers your skin, leaving it soft, refreshed, and beautifully radiant.',
+      'Elevate your daily routine with Argan Gold Essentials Set, a trio of indulgent skincare must-haves infused with pure argan oil to cleanse, nourish, and hydrate. Perfect for hotels, spas, or home, this luxurious set pampers your skin, leaving it soft, refreshed, and beautifully radiant.',
     keyBenefits: '✨ Set Includes:',
     benefits: [
       '✔ Argan Gold Hand Wash – Gently cleanses while maintaining moisture balance.',
@@ -229,9 +278,9 @@ export const products = [
       '✔ Argan Gold Body Lotion – Deeply nourishes and enhances natural radiance.',
     ],
     conclusion:
-      'Designed for daily indulgence, the MIY Argan Gold Essentials Set brings a touch of spa-like luxury to every wash. Because self-care should feel extraordinary - every single day.',
+      'Designed for daily indulgence, the MY Argan Gold Essentials Set brings a touch of spa-like luxury to every wash. Because self-care should feel extraordinary - every single day.',
     price: 15,
-    image: [image_7, image_5_3, image_3_2, image_7_1],
+    image: [image_6_1, image_2_4, image_3_3, image_6, image_1_2],
     category: 'Body',
     subCategory: 'Set',
     sizes: ['3 x 30 ml'],
@@ -240,19 +289,19 @@ export const products = [
   },
   {
     _id: 'aaaah',
-    name: 'MIY Argan Gold Hair Care Duo',
+    name: 'Argan Gold Hair Care Duo',
     subName: 'Luxurious Nutrition for Healthy Hair',
     description:
-      'Give your hair the care it deserves with the MIY Argan Gold Hair Care Duo, a perfect pairing of shampoo and conditioner infused with pure argan oil to cleanse, hydrate, and restore shine. Designed for all hair types, this luxurious duo leaves hair silky smooth, strong, and beautifully radiant.',
+      'Give your hair the care it deserves with our Argan Gold Hair Care Duo, a perfect pairing of shampoo and conditioner infused with pure argan oil to cleanse, hydrate, and restore shine. Designed for all hair types, this luxurious duo leaves hair silky smooth, strong, and beautifully radiant.',
     keyBenefits: '✨ Set Includes:',
     benefits: [
       '✔ Argan Gold Shampoo – Gently cleanses while maintaining moisture and enhancing shine.',
       '✔ Argan Gold Conditioner – Deeply nourishes, detangles, and smooths for frizz-free, soft hair.',
     ],
     conclusion:
-      'Whether at home, in a luxury hotel, or at a spa, the MIY Argan Gold Hair Care Duo brings salon-quality results to your everyday routine. Because healthy, gorgeous hair starts with the right care.',
+      'Whether at home, in a luxury hotel, or at a spa, the MY Argan Gold Hair Care Duo brings salon-quality results to your everyday routine. Because healthy, gorgeous hair starts with the right care.',
     price: 10,
-    image: [image_8, image_8_2, image_5_2, image_8_1],
+    image: [image_20_1, image_1_2, image_19_1, image_20, image_5_2],
     category: 'Hair',
     subCategory: 'Set',
     sizes: ['2 x 30 ml'],
@@ -261,7 +310,7 @@ export const products = [
   },
 
   {
-    _id: '1',
+    _id: 'aaaai',
     name: 'Cleanser',
     subName: 'Gentle and Repairing Facial Cleansing Vegan-Friendly Formula',
     description:
@@ -276,7 +325,7 @@ export const products = [
     conclusion:
       'With our Facial Cleanser, your skin feels clean, hydrated, and glowing – never tight or dry.',
     price: 13,
-    image: [image_1_1, image_2_2, image_3_3, image_1],
+    image: [image_7_1, image_2_2, image_2_4, image_7, image_3_3],
     category: 'Face',
     subCategory: 'Washing',
     sizes: ['100 ml'],
@@ -284,7 +333,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: '2',
+    _id: 'aaaaj',
     name: 'Foaming Facial Wash',
     subName: 'Light, Luxurious Cleanse for Radiant Skin',
     description:
@@ -299,7 +348,7 @@ export const products = [
     conclusion:
       'Start your skincare routine with a touch of luxury with Foaming Facial Wash.',
     price: 9,
-    image: [image_1],
+    image: [image_8_1, image_1_2, image_2_2, image_8, image_2_4],
     category: 'Face',
     subCategory: 'Washing',
     sizes: ['30 ml'],
@@ -307,7 +356,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: '3',
+    _id: 'aaaak',
     name: 'Toner',
     subName: 'Refresh & Balance for a Glowing Complexion',
     description:
@@ -321,7 +370,7 @@ export const products = [
     ],
     conclusion: 'Give your skin the perfect post-cleanse glow with this Toner.',
     price: 12,
-    image: [image_1],
+    image: [image_9_1, image_1_2, image_2_2, image_9, image_2_4],
     category: 'Face',
     subCategory: 'Washing',
     sizes: ['100 ml'],
@@ -329,7 +378,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: '4',
+    _id: 'aaaal',
     name: 'Exfoliating Face Scrub',
     subName: 'Smooth, Radiant Skin in Every Use',
     description:
@@ -344,7 +393,7 @@ export const products = [
     conclusion:
       'Treat your skin to a gentle polish with Exfoliating Face Scrub – because smooth, glowing skin starts here.',
     price: 13,
-    image: [image_1],
+    image: [image_11_1, image_11_2, image_1_3, image_11, image_2_4],
     category: 'Face',
     subCategory: 'Scrub',
     sizes: ['100 ml'],
@@ -352,7 +401,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: '5',
+    _id: 'aaaam',
     name: 'Hyaluronic Face Cream with Vit.A, C & E (Brightening)',
     subName: 'Deep Hydration',
     description:
@@ -366,8 +415,8 @@ export const products = [
     ],
     conclusion:
       'Give your skin a daily drink of hydration with Hyaluronic Face Cream.',
-    price: 1,
-    image: [image_1],
+    price: 15,
+    image: [image_10_1, image_10_2, image_3_2, image_10, image_1_3],
     category: 'Face',
     subCategory: 'Cream',
     sizes: ['50 ml'],
@@ -375,7 +424,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: '6',
+    _id: 'aaaan',
     name: 'Face Mask',
     subName: 'A Weekly Ritual for Glowing, Rejuvenated Skin',
     description:
@@ -390,7 +439,7 @@ export const products = [
     conclusion:
       'Turn your skincare routine into a spa experience with our Face Mask.',
     price: 13,
-    image: [image_1],
+    image: [image_12_1, image_1_2, image_3_3, image_12_1, image_3_2],
     category: 'Face',
     subCategory: 'Mask',
     sizes: ['100 ml'],
@@ -398,7 +447,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: '7',
+    _id: 'aaaao',
     name: 'Collagen Face Cream',
     subName: 'Firm, Smooth & Youthful Skin',
     description:
@@ -413,7 +462,7 @@ export const products = [
     conclusion:
       'Reclaim youthful skin with the firming power of Collagen Face Cream.',
     price: 15,
-    image: [image_1],
+    image: [image_13_1, image_2_4, image_1_2, image_13, image_3_2],
     category: 'Face',
     subCategory: 'Cream',
     sizes: ['30 ml'],
@@ -421,7 +470,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: '8',
+    _id: 'aaaap',
     name: 'UV Face Sun Cream SPF 30',
     subName: 'Daily Protection with a Nourishing Touch',
     description:
@@ -436,7 +485,7 @@ export const products = [
     conclusion:
       'Protect your glow with our UV Face Sun Cream – because sun care should feel like skincare.',
     price: 14,
-    image: [image_1],
+    image: [image_14_1, image_1_2, image_3_3, image_14, image_3_2],
     category: 'Face',
     subCategory: 'Cream',
     sizes: ['30 ml'],
@@ -444,7 +493,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: '9',
+    _id: 'aaaaq',
     name: 'Pomegranate Face Oil',
     subName: 'Revitalising Glow Booster',
     description:
@@ -459,7 +508,7 @@ export const products = [
     conclusion:
       'Awaken your natural glow with the antioxidant power of  Pomegranate Face Oil.',
     price: 10,
-    image: [image_1],
+    image: [image_15_1, image_15_2, image_15_3, image_15, image_15_4],
     category: 'Face',
     subCategory: 'Oil',
     sizes: ['30 ml'],
@@ -467,7 +516,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: '10',
+    _id: 'aaaar',
     name: 'Lavender Face Oil',
     subName: 'Calming Care for Radiant, Balanced Skin',
     description:
@@ -482,7 +531,7 @@ export const products = [
     conclusion:
       'Perfect for evening wind-down rituals, Lavender Face Oil brings harmony to your skin and your routine.',
     price: 10,
-    image: [image_1],
+    image: [image_16_1, image_15_3, image_2_2, image_16, image_2_4],
     category: 'Face',
     subCategory: 'Oil',
     sizes: ['30 ml'],
@@ -490,7 +539,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: '11',
+    _id: 'aaaas',
     name: 'Pomegranate Body Oil',
     subName: 'Silky Soft Skin with a Radiant Glow',
     description:
@@ -505,7 +554,7 @@ export const products = [
     conclusion:
       'Glow from head to toe with Pomegranate Body Oil – the ultimate daily treat for your skin.',
     price: 15,
-    image: [image_1],
+    image: [image_17_1, image_15_2, image_3_3, image_17, image_2_2],
     category: 'Body',
     subCategory: 'Oil',
     sizes: ['100 ml'],
@@ -513,7 +562,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: '12',
+    _id: 'aaaat',
     name: 'Lavender Body Oil',
     subName: 'Relax & Nourish from Head to Toe',
     description:
@@ -528,61 +577,16 @@ export const products = [
     conclusion:
       'Wrap your body in softness and serenity with Lavender Body Oil.',
     price: 15,
-    image: [image_1],
+    image: [image_18_1, image_15_1, image_15_2, image_16, image_2_2],
     category: 'Body',
     subCategory: 'Oil',
     sizes: ['100 ml'],
     date: 1716634345448,
     bestseller: false,
   },
+
   {
-    _id: '13',
-    name: 'Argan Gold Body Wash',
-    subName: 'Cleansing for Soft, Radiant Skin',
-    description:
-      'Transform your daily shower into a spa-like experience with Argan Gold Body Wash. Infused with pure argan oil, this indulgent formula gently cleanses while locking in moisture, leaving your skin feeling soft, refreshed, and beautifully radiant. A luxurious liquid gold body wash with moisturising effects and a scent perfect for both men and women.',
-    keyBenefits: '✨ Key Benefits:',
-    benefits: [
-      '✔ Gentle Cleansing – Effectively removes impurities without stripping moisture.',
-      '✔ Deep Hydration – Argan oil nourishes for long-lasting softness.',
-      '✔ Golden Glow Effect – Subtle shimmer enhances natural radiance.',
-      '✔ For All Skin Types – Gentle and perfect for daily use.',
-    ],
-    conclusion:
-      'Indulge your skin with Argan Gold Body Wash – because every shower should feel like a touch of luxury.',
-    price: 14,
-    image: [image_1],
-    category: 'Body',
-    subCategory: 'Washing',
-    sizes: ['300 ml'],
-    date: 1716622345448,
-    bestseller: false,
-  },
-  {
-    _id: '14',
-    name: 'Argan Gold Body Lotion',
-    subName: 'Hydration for Glowing, Silky Skin',
-    description:
-      'Pamper your skin with a thick Argan Gold Body Lotion, a rich and nourishing formula infused with pure argan oil to deliver deep hydration and a light shimmer effect on the skin. This lightweight yet intensely moisturizing lotion absorbs effortlessly, leaving your skin feeling soft, smooth, and beautifully luminous. Smells divine!',
-    keyBenefits: '✨ Key Benefits:',
-    benefits: [
-      '✔ Intense Hydration – Argan oil deeply nourishes and replenishes moisture.',
-      '✔ Fast-Absorbing Formula – Lightweight texture for a non-greasy feel.',
-      '✔ Golden Glow Effect – Subtle shimmer enhances your skin’s natural radiance.',
-      '✔ For All Skin Types – Gentle and suitable for daily use.',
-    ],
-    conclusion:
-      'Elevate your skincare routine with Argan Gold Body Lotion – because your skin deserves to shine with luxury.',
-    price: 14,
-    image: [image_1],
-    category: 'Body',
-    subCategory: 'Lotion',
-    sizes: ['300 ml'],
-    date: 1716234545448,
-    bestseller: true,
-  },
-  {
-    _id: '15',
+    _id: 'aaaau',
     name: 'Age-Erasing Eye Primer',
     subName: 'Brighten, Smooth & Prep',
     description:
@@ -597,7 +601,7 @@ export const products = [
     conclusion:
       'Look bright-eyed and refreshed all day with Age-Erasing Eye Primer.',
     price: 15,
-    image: [image_1],
+    image: [image_21_1, image_15_2, image_2_2, image_21, image_15_1],
     category: 'Eyes',
     subCategory: 'Cream',
     sizes: ['30 ml'],
@@ -605,7 +609,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: '16',
+    _id: 'aaaav',
     name: 'Lash & Brow Vitamin E Oil',
     subName: 'Strength & Shine for Natural Beauty',
     description:
@@ -619,7 +623,7 @@ export const products = [
     ],
     conclusion: 'Define your natural beauty with Lash & Brow Vitamin E Oil.',
     price: 9,
-    image: [image_1],
+    image: [image_23_1, image_1_2, image_15_2, image_23, image_2_2],
     category: 'Eyes',
     subCategory: 'Oil',
     sizes: ['30 ml'],
@@ -627,7 +631,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: '17',
+    _id: 'aaaaw',
     name: 'Arnica Lip Oil',
     subName: 'Soothing Relief for Dry, Chapped Lips',
     description:
@@ -642,57 +646,11 @@ export const products = [
     conclusion:
       'Show your lips some love with Arnica Lip Oil – for comfort, care, and shine in every swipe.',
     price: 10,
-    image: [image_1],
+    image: [image_22_1, image_2_2, image_15_2, image_22, image_15_1],
     category: 'Lips',
     subCategory: 'Oil',
     sizes: ['8 ml'],
     date: 1716234545448,
-    bestseller: true,
-  },
-  {
-    _id: '18',
-    name: 'Argan Gold Shampoo',
-    subName: 'Luxurious Care for Radiant, Healthy Hair',
-    description:
-      'Transform your hair with Argan Gold Shampoo, a luxurious formula infused with pure argan oil to deeply nourish, hydrate, and restore shine. Designed for all hair types, this shampoo gently cleanses while maintaining the natural moisture balance, leaving your hair silky soft, manageable, and beautifully shiny.',
-    keyBenefits: '✨ Key Benefits:',
-    benefits: [
-      '✔ Deep Nourishment – Argan oil hydrates and strengthens hair from root to tip.',
-      '✔ Gentle Cleansing – Removes impurities while preserving natural oils.',
-      '✔ Weightless Shine – Golden shimmer enhances hair’s natural glow.',
-      '✔ For All Hair Types – Suitable for daily use and color-treated hair.',
-    ],
-    conclusion:
-      'Experience the luxury of salon-quality hair care at home with Argan Gold Shampoo – because your hair deserves nothing but the best.',
-    price: 13,
-    image: [image_1],
-    category: 'Hair',
-    subCategory: 'Shampoo',
-    sizes: ['300 ml'],
-    date: 1716621345448,
-    bestseller: true,
-  },
-  {
-    _id: '19',
-    name: 'Argan Gold Conditioner',
-    subName: 'Intense Nourishment for Silky, Radiant Hair',
-    description:
-      'Give your hair the ultimate care with Argan Gold Conditioner, enriched with pure argan oil to deeply hydrate, strengthen, and restore shine. This luxurious formula detangles effortlessly, leaving hair silky smooth, frizz-free without weighing hair down, and beautifully radiant. Perfect for all hair types, including dry and color-treated hair.',
-    keyBenefits: '✨ Key Benefits:',
-    benefits: [
-      '✔ Deep Hydration & Repair – Argan oil nourishes and strengthens hair.',
-      '✔ Frizz Control & Softness – Leaves hair smooth, manageable, and tangle-free.',
-      '✔ Weightless Shine – Enhances natural radiance without weighing hair down.',
-      '✔ For All Hair Types – Safe for daily use and color-treated hair.',
-    ],
-    conclusion:
-      'Pair with Argan Gold Shampoo for the perfect haircare ritual. Indulge in salon-quality softness and shine—because your hair deserves luxury.',
-    price: 13,
-    image: [image_1],
-    category: 'Hair',
-    subCategory: 'Conditioner',
-    sizes: ['300 ml'],
-    date: 1716621345448,
     bestseller: true,
   },
 ];
