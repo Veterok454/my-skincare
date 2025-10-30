@@ -12,7 +12,7 @@ const Hero = () => {
             <p className='font-medium text-base  '>Welcome to</p>
             <p className='w-8 md:w-11 h-[1px] bg-line'></p>
           </div>
-          <h1 className='niconne-regular text-3xl text-red-start sm:py-3 lg:text-5xl leading-relaxed'>
+          <h1 className='eb+garamond-regular text-3xl text-red-start sm:py-3 lg:text-5xl leading-relaxed'>
             MY Skin Care
           </h1>
           <div className='flex items-center gap-2'>
