@@ -7,8 +7,9 @@ export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
   const [loadingCart, setLoadingCart] = useState(true);
 
-  const { token } = useContext(ShopContext);
-  const BASE_URL = 'https://my-skincare-backend.vercel.app';
+  const { token: contextToken, backendUrl } = useContext(ShopContext);
+  const token = contextToken || localStorage.getItem('token');
+
   const navigate = useNavigate();
 
   const clearCart = () => {
@@ -60,7 +61,7 @@ export const CartProvider = ({ children }) => {
 
     try {
       setLoadingCart(true);
-      const res = await fetch(`${BASE_URL}/api/user/cart`, {
+      const res = await fetch(`${backendUrl}/api/user/cart`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -80,7 +81,7 @@ export const CartProvider = ({ children }) => {
     } finally {
       setLoadingCart(false);
     }
-  }, [token, navigate]);
+  }, [token, navigate, backendUrl]);
 
   useEffect(() => {
     if (!token) {
@@ -111,7 +112,7 @@ export const CartProvider = ({ children }) => {
 
     const saveCart = async () => {
       try {
-        await fetch(`${BASE_URL}/api/user/cart`, {
+        await fetch(`${backendUrl}/api/user/cart`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -125,7 +126,7 @@ export const CartProvider = ({ children }) => {
     };
 
     saveCart();
-  }, [cartItems, token, loadingCart]);
+  }, [cartItems, token, loadingCart, backendUrl]);
 
   useEffect(() => {
     if (token) {
