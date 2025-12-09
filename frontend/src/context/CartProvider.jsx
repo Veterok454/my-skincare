@@ -8,7 +8,7 @@ export const CartProvider = ({ children }) => {
   const [loadingCart, setLoadingCart] = useState(true);
 
   const { token } = useContext(ShopContext);
-  const BASE_URL = 'http://localhost:4000';
+  const BASE_URL = 'https://my-skincare-backend.vercel.app';
   const navigate = useNavigate();
 
   const clearCart = () => {

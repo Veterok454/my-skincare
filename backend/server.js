@@ -26,7 +26,18 @@ const initializeServices = async () => {
 
 // Middlewares
 app.use(express.json({ limit: '10mb' }));
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      'https://my-skincare.vercel.app',
+      'http://localhost:5173',
+      'http://localhost:3000',
+    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
+  })
+);
 
 // API endpoints
 app.use('/api/user', userRouter);
@@ -61,18 +72,5 @@ app.use((error, req, res, next) => {
   });
 });
 
-// Start Server
-const startServer = async () => {
-  try {
-    await initializeServices();
-
-    app.listen(port, () => {
-      console.log(`Server: Started on PORT: ${port}`);
-    });
-  } catch (error) {
-    console.error('Failed to start server:', error);
-    process.exit(1);
-  }
-};
-
-startServer();
+await initializeServices();
+export default app;
